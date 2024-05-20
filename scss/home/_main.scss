@@ -1,0 +1,19 @@
+@use '../partials/tools' as *;
+@use '../partials/assembler/' as *;
+
+// --------------------
+/* --- home main --- */
+// --------------------
+
+.dark__theme {
+    --clr-body: #{$clr__body--dark};
+    --clr-separation: #{$clr__separation__bg--dark};
+    --clr-H2: #{$clr__H2--dark};
+    --clr-bg-H2: #{$clr__bg__h2--dark};
+    --clr-bg-separator: #{$clr__bg__separator--dark};
+}
+
+.home {
+    font-optical-sizing: auto;
+    background-color: var(--clr-body);
+}

@@ -48,8 +48,7 @@
 
 @mixin container($width) {
     max-width: $width;
-    padding-inline: em($cont__padding__inln, 16);
-    padding-block: em($cont__padding__block, 16);
+
     margin-inline: auto;
 }
 

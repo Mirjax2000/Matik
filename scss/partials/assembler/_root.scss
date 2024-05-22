@@ -10,15 +10,19 @@
     // sizes
     --H1: #{$H1--PC};
     --H2: #{$H2--PC};
+    --H3: #{$H3--PC};
+    --H4: #{$H4--PC};
     --H5: #{$H5--PC};
     --H6: #{$H6--PC};
     --par: #{$par--PC};
+    --nav-link: #{$nav__link--PC};
+
+    // colors - default
+    --clr-header: #{$clr__header};
+    --clr-nav-link:#{$clr__nav--link};
+    
     // colors - light theme
     --clr-body: #{$clr__body--light};
-    --clr-header: #{$clr__header};
-    --clr-header-H1: #{$clr__header--H1};
-    --clr-separation: #{$clr__separation__bg--light};
-    --clr-H2: #{$clr__H2--light};
-    --clr-bg-H2: #{$clr__bg__h2--light};
-    --clr-bg-separator: #{$clr__bg__separator--light};
+    --clr-separator: #{$separator--light};
+    --clr-banner-H2: #{$clr__H2--light};
 }

@@ -2,3 +2,47 @@
 // ------------------
 /*  --- header --- */
 // ------------------
+.header {
+    background-color: var(--clr-header);
+    padding-inline: em(16, 16);
+    border-bottom: 1px solid $clr12;
+
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: em(16, 16);
+    }
+
+    a {
+        color: var(--clr-nav-link);
+        font-size: var(--nav-link); //20
+        padding: em(12, 20);
+        border-radius: em(5, 20);
+        outline: 1px solid transparent;
+
+        transition: ease-in-out $tr-time all;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: em(5, 20);
+            left: 50%;
+            right: 100%;
+            height: em(3, 20);
+            border-radius: em(5, 20);
+            transition: ease-in-out $tr-time all;
+            opacity: 0;
+        }
+
+        &:focus,
+        &:hover {
+            &::after {
+                background: $clr19;
+                right: 0%;
+                left: 0%;
+                opacity: 1;
+            }
+        }
+    }
+}

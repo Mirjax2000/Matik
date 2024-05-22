@@ -41,7 +41,7 @@
         <!-- <link rel="preload" href="hero.jpg" as="image" fetchpriority="high"> -->
     </head>
 
-    <body class="home">
+    <body class="faktorial">
         <header class="header">
             <nav class="container">
                 <ul class="navigation">
@@ -60,7 +60,9 @@
                         <ul>
                             <li><h3>Obsah</h3></li>
                             <li>
-                                <a href="faktorial.html"><h4>Factorial</h4></a>
+                                <a href="faktorial.html" class="active"
+                                    ><h4>Factorial</h4></a
+                                >
                             </li>
                             <li class="rozklad">
                                 <a href="rozklad.html"
@@ -117,12 +119,22 @@
                         </div>
                     </div>
                 </section>
-
-                <div class="ajax" id="ajax">
-                    <section class="content" id="content">
-                        <div class="banner"><h2>banner</h2></div>
+                <div class="ajax">
+                    <section class="content" id="faktorial__content">
+                        <div class="banner">
+                            <h2>
+                                Factorial je součin všech celých čísel od jedné
+                                do n.
+                            </h2>
+                        </div>
                         <div class="content__wrapper">
-                            <article class="zadani">zadani</article>
+                            <article class="zadani">
+                                <form action="">
+                                    <input type="text" />
+                                    <input type="button" value="send" />
+                                </form>
+                            </article>
+
                             <article class="vysledek">vysledek</article>
                         </div>
                     </section>

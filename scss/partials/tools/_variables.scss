@@ -20,7 +20,8 @@ $clr20: #f39765;
 $clr21: #979797;
 $clr22: #c1c4cb;
 $clr23: #f2f2f2;
-$clr24: #202020;
+$clr24: #0099ff;
+$clr25: #151619ca;
 
 $clr99: #505050;
 // -----------------------
@@ -30,8 +31,8 @@ $clr99: #505050;
 $clr__H1--light: $clr10;
 $clr__H1--dark: $clr10;
 
-// text H2
-$clr__H2--light: $clr16;
+// text - banner H2
+$clr__H2--light: $clr14;
 $clr__H2--dark: $clr22;
 
 // text H3
@@ -46,11 +47,20 @@ $clr__H4--dark: $clr22;
 $clr__par--light: $clr22;
 $clr__par--dark: $clr22;
 
+// menu colors
+$clr__menu--H3: $clr16;
+
+// navigation colors
+$clr__nav--link: $clr17;
 // -------------------------
 
 // backround color
 $clr__body--light: $clr18;
 $clr__body--dark: $clr12;
+
+$clr__header: $clr13;
+
+$clr__menu:$clr25;
 
 $clr__separ--light: $clr10;
 $clr__separ--dark: $clr11;
@@ -96,8 +106,11 @@ $br-btn: 29;
 // ----------------------
 
 // border color
-$clr-br: $clr13;
-$clr-br-list: $clr13;
+$clr-br--light: $clr13;
+$clr-br--dark: $clr13;
+
+$separator--light: $clr22;
+$separator--dark: $clr13;
 // ----------------------
 
 // shadow color
@@ -122,17 +135,21 @@ $font-size-90: 90%;
 $font-size-80: 80%;
 // --------------------------------
 // font-sizes
-$H1--Mob: rem(32, 0);
-$H1--Tbt: rem(48, 0);
-$H1--PC: rem(15, 0);
+$H1--Mob: rem(16, 0);
+$H1--Tbt: rem(20, 0);
+$H1--PC: rem(24, 0);
 
 $H2--Mob: rem(16, 0);
-$H2--Tbt: rem(18, 0);
-$H2--PC: rem(14, 0);
+$H2--Tbt: rem(16, 0);
+$H2--PC: rem(20, 0);
 
-$H3--Mob: rem(11, 0);
-$H3--Tbt: rem(16, 0);
-$H3--PC: rem(16, 0);
+$H3--Mob: rem(16, 0);
+$H3--Tbt: rem(20, 0);
+$H3--PC: rem(24, 0);
+
+$H4--Mob: rem(16, 0);
+$H4--Tbt: rem(16, 0);
+$H4--PC: rem(20, 0);
 
 $H5--Mob: rem(11, 0);
 $H5--Tbt: rem(16, 0);
@@ -146,14 +163,9 @@ $par--Mob: rem(14, 0);
 $par--Tbt: rem(16, 0);
 $par--PC: rem(16, 0);
 
-$par__header--Mob: rem(8, 0);
-$par__header--Tbt: rem(16, 0);
-$par__header--PC: rem(18, 0);
-
-$span--Mob: rem(12, 0);
-$span--Tbt: rem(12, 0);
-$span--PC: rem(12, 0);
-
+$nav__link--Mob: rem(16, 0);
+$nav__link--Tbt: rem(16, 0);
+$nav__link--PC: rem(20, 0);
 
 // container settings
 $cont__width--Mob: rem(375, 0);

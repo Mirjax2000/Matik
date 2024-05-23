@@ -11,145 +11,18 @@
         <!-- zadej jmeno autora -->
         <meta name="author" content="Miroslav Viktorin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <!-- aktivace fontawesome -->
-        <link
-            rel="stylesheet"
-            href="./assets/fontAwesome_css/fontawesome.min.css"
-        />
-        <link rel="stylesheet" href="./assets/fontAwesome_css/brands.min.css" />
-        <link rel="stylesheet" href="./assets/fontAwesome_css/solid.min.css" />
-
-        <link rel="stylesheet" href="css/home.css" />
-        <!-- <link
-            rel="stylesheet"
-            href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css"
-        /> -->
-        <!-- <link rel="stylesheet" href="./js/jquery-ui.min.css" /> -->
-
-        <link
-            rel="shortcut icon"
-            href="./favicon-32x32.png"
-            type="image/x-icon"
-        />
-        <link
-            rel="shortcut icon"
-            href="./favicon-32x32.webp"
-            type="image/x-icon"
-        />
-        <!-- preload img for javascript -->
-        <!-- <link rel="preload" href="hero.jpg" as="image" fetchpriority="high"> -->
+        <link rel="stylesheet" href="./css/home.css" />
     </head>
 
-    <body class="faktorial">
-        <header class="header">
-            <nav class="container">
-                <ul class="navigation">
-                    <li><a href="index.html">Matik</a></li>
-                    <li><a href="#">neco</a></li>
-                    <li><a href="#">neco</a></li>
-                    <li><a href="#">neco</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="container">
-            <main class="main">
-                <section class="menu">
-                    <div class="wrapper">
-                        <a href="index.html"><h1>Matík</h1></a>
-                        <ul>
-                            <li><h3>Obsah</h3></li>
-                            <li>
-                                <a href="faktorial.html"><h4>Factorial</h4></a>
-                            </li>
-
-                            <li class="active">
-                                <a href="rozklad.html"
-                                    ><h4>Prvočíselný rozklad</h4></a
-                                >
-                            </li>
-                            
-                            <li class="NSN">
-                                <h4>
-                                    Nejmenší společný<br />
-                                    násobek (NSN)
-                                </h4>
-                            </li>
-                            <li class="NSD">
-                                <h4>Největší společný<br />dělitel (NSD)</h4>
-                            </li>
-                            <li class="prace"><h4>Společná práce</h4></li>
-                            <li class="pohyb"><h4>Úlohy o pohybu</h4></li>
-                            <li class="smesi"><h4>Úlohy o směsích</h4></li>
-                            <li class="prima"><h4>Přímá úměrnost</h4></li>
-                            <li class="neprima"><h4>Nepřímá úměrnost</h4></li>
-                            <li class="obvody"><h4>Obvody</h4></li>
-                            <li class="obsahy"><h4>Obsahy</h4></li>
-                            <li class="hustota"><h4>Hustota</h4></li>
-                        </ul>
-                    </div>
-
-                    <div class="theme">
-                        <div class="light">
-                            <svg
-                                width="18"
-                                height="18"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M2.7 9a.9.9 0 0 0-.9-.9H.9a.9.9 0 0 0 0 1.8h.9a.9.9 0 0 0 .9-.9Zm.576 4.5-.639.639a.9.9 0 0 0 0 1.269.9.9 0 0 0 1.269 0l.639-.639A.9.9 0 0 0 3.276 13.5ZM9 2.7a.9.9 0 0 0 .9-.9V.9a.9.9 0 0 0-1.8 0v.9a.9.9 0 0 0 .9.9Zm5.094 2.106a.9.9 0 0 0 .63-.261l.639-.639a.9.9 0 1 0-1.269-1.269l-.594.639a.9.9 0 0 0 0 1.269.9.9 0 0 0 .594.261Zm-10.8-.261a.9.9 0 0 0 1.269 0 .9.9 0 0 0 0-1.269l-.639-.639a.904.904 0 1 0-1.287 1.269l.657.639ZM17.1 8.1h-.9a.9.9 0 1 0 0 1.8h.9a.9.9 0 1 0 0-1.8Zm-2.376 5.4a.9.9 0 0 0-1.224 1.224l.639.639a.9.9 0 0 0 1.269 0 .9.9 0 0 0 0-1.269l-.684-.594ZM9 4.05A4.95 4.95 0 1 0 13.95 9 4.959 4.959 0 0 0 9 4.05Zm0 8.1a3.15 3.15 0 1 1 0-6.3 3.15 3.15 0 0 1 0 6.3Zm0 3.15a.9.9 0 0 0-.9.9v.9a.9.9 0 1 0 1.8 0v-.9a.9.9 0 0 0-.9-.9Z"
-                                    fill="#5A6069"
-                                />
-                            </svg>
-                        </div>
-                        <div class="switch">
-                            <div class="switch__container"></div>
-                        </div>
-                        <div class="dark">
-                            <svg
-                                width="17"
-                                height="16"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M16.141 8.804a.823.823 0 0 0-.864-.115 6.622 6.622 0 0 1-2.772.6A6.704 6.704 0 0 1 5.81 2.626 7.066 7.066 0 0 1 6.015.981a.823.823 0 0 0-1.094-.93 8.341 8.341 0 1 0 11.516 9.617.823.823 0 0 0-.296-.864Zm-7.814 5.503A6.696 6.696 0 0 1 4.164 2.404v.222a8.35 8.35 0 0 0 10.069 8.16 6.671 6.671 0 0 1-5.906 3.554v-.033Z"
-                                    fill="#5A6069"
-                                />
-                            </svg>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="ajax">
-                    <section class="content" id="rozklad__content">
-                        <div class="banner">
-                            <h2>
-                                Prvočíselný rozklad je rozklad na složeného
-                                čísla na prvočísla
-                            </h2>
-                        </div>
-                        <div class="content__wrapper">
-                            <article class="zadani">
-                                <form action="">
-                                    <input type="text" />
-                                    <input type="button" value="send" />
-                                </form>
-                            </article>
-
-                            <article class="vysledek">vysledek</article>
-                        </div>
-                    </section>
+    <body class="rozklad">
+        <div class="ajax" id="ajax">
+            <section class="content" id="uloha">
+                <div class="banner"><h2>rozklad</h2></div>
+                <div class="content__wrapper">
+                    <article class="zadani">zadani</article>
+                    <article class="vysledek">vysledek</article>
                 </div>
-            </main>
+            </section>
         </div>
-
-        <!-- Jquery CDN -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="./js/jquery-3.7.1.min.js"></script>
-        <!-- ------------------------------ -->
-
-        <!-- my script -->
-        <script src="./js/script.js"></script>
-        <!-- ------------------------------ -->
     </body>
 </html>

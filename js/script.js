@@ -10,18 +10,10 @@ $(function () {
         theme_switch = $('.switch'),
         menu = $('.menu'),
         ajax = $('#ajax'),
-        content = $('#content'),
-        menuLink = $('.menu__link'),
-        poleLinku = [
-            ' #faktorial__content',
-            ' #rozklad__content',
-            ' #nasobek__content',
-            ' #delitel__content',
-        ];
-    console.log(menuLink);
+        content = $('#content');
 
     // Theme
-    toggle = function () {
+    const toggle = function () {
         body.toggleClass('dark');
         theme.toggleClass('off');
     };
@@ -39,9 +31,9 @@ $(function () {
         event.preventDefault();
         let link = $(this).attr('href');
         menu.find('li a').removeClass('active');
-        $(this).toggleClass('active');
+        $(this).addClass('active');
         content.hide();
-        ajax.load(link + poleLinku[1]);
+        ajax.load(link + ' #uloha');
     });
     // -----------------------------------------------
 });

@@ -8,11 +8,17 @@ $(function () {
     let theme = $('.theme'),
         body = $('body'),
         theme_switch = $('.switch'),
-        main = $('.main'),
         menu = $('.menu'),
         ajax = $('#ajax'),
         content = $('#content'),
-        faktorialContent = $('#faktorial__content');
+        menuLink = $('.menu__link'),
+        poleLinku = [
+            ' #faktorial__content',
+            ' #rozklad__content',
+            ' #nasobek__content',
+            ' #delitel__content',
+        ];
+    console.log(menuLink);
 
     // Theme
     toggle = function () {
@@ -32,8 +38,10 @@ $(function () {
     menu.on('click', 'li a', function (event) {
         event.preventDefault();
         let link = $(this).attr('href');
+        menu.find('li a').removeClass('active');
+        $(this).toggleClass('active');
         content.hide();
-        ajax.load(link + ' #faktorial__content');
+        ajax.load(link + poleLinku[1]);
     });
     // -----------------------------------------------
 });

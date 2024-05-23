@@ -41,7 +41,7 @@
         <!-- <link rel="preload" href="hero.jpg" as="image" fetchpriority="high"> -->
     </head>
 
-    <body class="home">
+    <body class="faktorial">
         <header class="header">
             <nav class="container">
                 <ul class="navigation">
@@ -59,83 +59,33 @@
                         <a href="index.html"><h1>Matík</h1></a>
                         <ul>
                             <li><h3>Obsah</h3></li>
-
                             <li>
-                                <a href="faktorial.html" class="menu__link"
-                                    ><h4>Factorial</h4></a
-                                >
+                                <a href="faktorial.html"><h4>Factorial</h4></a>
                             </li>
 
-                            <li>
-                                <a href="rozklad.html" class="menu__link"
+                            <li class="active">
+                                <a href="rozklad.html"
                                     ><h4>Prvočíselný rozklad</h4></a
                                 >
                             </li>
-
-                            <li>
-                                <a href="nasobek.html" class="menu__link"
-                                    ><h4>
-                                        Nejmenší společný<br />
-                                        násobek (NSN)
-                                    </h4></a
-                                >
+                            
+                            <li class="NSN">
+                                <h4>
+                                    Nejmenší společný<br />
+                                    násobek (NSN)
+                                </h4>
                             </li>
-
-                            <li>
-                                <a href="delitel.html" class="menu__link"
-                                    ><h4>
-                                        Největší společný<br />dělitel (NSD)
-                                    </h4></a
-                                >
+                            <li class="NSD">
+                                <h4>Největší společný<br />dělitel (NSD)</h4>
                             </li>
-
-                            <li>
-                                <a href="prace.html" class="menu__link"
-                                    ><h4>Společná práce</h4></a
-                                >
-                            </li>
-
-                            <li>
-                                <a href="pohyb.html" class="menu__link"
-                                    ><h4>Úlohy o pohybu</h4></a
-                                >
-                            </li>
-
-                            <li>
-                                <a href="smesi.html" class="menu__link"
-                                    ><h4>Úlohy o směsích</h4></a
-                                >
-                            </li>
-
-                            <li>
-                                <a href="prima.html" class="menu__link"
-                                    ><h4>Přímá úměrnost</h4></a
-                                >
-                            </li>
-
-                            <li>
-                                <a href="neprima.html" class="menu__link"
-                                    ><h4>Nepřímá úměrnost</h4></a
-                                >
-                            </li>
-
-                            <li>
-                                <a href="obvody.html" class="menu__link"
-                                    ><h4>Obvody</h4></a
-                                >
-                            </li>
-
-                            <li>
-                                <a href="obsahy.html" class="menu__link"
-                                    ><h4>Obsahy</h4></a
-                                >
-                            </li>
-
-                            <li>
-                                <a href="hustota.html" class="menu__link"
-                                    ><h4>Hustota</h4></a
-                                >
-                            </li>
+                            <li class="prace"><h4>Společná práce</h4></li>
+                            <li class="pohyb"><h4>Úlohy o pohybu</h4></li>
+                            <li class="smesi"><h4>Úlohy o směsích</h4></li>
+                            <li class="prima"><h4>Přímá úměrnost</h4></li>
+                            <li class="neprima"><h4>Nepřímá úměrnost</h4></li>
+                            <li class="obvody"><h4>Obvody</h4></li>
+                            <li class="obsahy"><h4>Obsahy</h4></li>
+                            <li class="hustota"><h4>Hustota</h4></li>
                         </ul>
                     </div>
 
@@ -170,11 +120,22 @@
                     </div>
                 </section>
 
-                <div class="ajax" id="ajax">
-                    <section class="content" id="content">
-                        <div class="banner"><h2>banner</h2></div>
+                <div class="ajax">
+                    <section class="content" id="rozklad__content">
+                        <div class="banner">
+                            <h2>
+                                Prvočíselný rozklad je rozklad na složeného
+                                čísla na prvočísla
+                            </h2>
+                        </div>
                         <div class="content__wrapper">
-                            <article class="zadani">zadani</article>
+                            <article class="zadani">
+                                <form action="">
+                                    <input type="text" />
+                                    <input type="button" value="send" />
+                                </form>
+                            </article>
+
                             <article class="vysledek">vysledek</article>
                         </div>
                     </section>
